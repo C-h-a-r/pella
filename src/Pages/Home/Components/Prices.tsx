@@ -14,7 +14,7 @@ export function Prices({ className }: PricesProps){
             <h1 className="text-4xl md:text-5xl font-bold text-center mb-12">Want More?</h1>
             <div className="flex flex-col md:flex-row gap-8 justify-center items-center pt-10">
                 {/* Free Plan */}
-                <Card className="w-full md:w-[350px] p-6 min-h-[500px] flex flex-col backdrop-blur-xl">
+                <Card className="w-full md:w-[350px] p-6 min-h-[500px] flex flex-col backdrop-blur-xl bg-zinc-900/60">
                     <CardHeader className="text-center px-0">
                         <h3 className="text-2xl font-bold">Free</h3>
                     </CardHeader>
@@ -44,7 +44,7 @@ export function Prices({ className }: PricesProps){
                 </Card>
 
                 {/* Small Plan */}
-                <Card className="w-full md:w-[350px] p-6 min-h-[500px] flex flex-col relative transform md:-translate-y-8 backdrop-blur-xl">
+                <Card className="w-full md:w-[350px] p-6 min-h-[500px] flex flex-col relative transform md:-translate-y-8 backdrop-blur-xl bg-zinc-900/60">
                     <div className="absolute -top-4 right-3 bg-primary text-white px-4 py-2 rounded-full text-base font-medium z-40">
                         Most Popular
                     </div>
@@ -78,7 +78,7 @@ export function Prices({ className }: PricesProps){
                 </Card>
 
                 {/* Super Plan */}
-                <Card className="w-full md:w-[350px] p-6 min-h-[500px] flex flex-col backdrop-blur-xl ">
+                <Card className="w-full md:w-[350px] p-6 min-h-[500px] flex flex-col backdrop-blur-xl bg-zinc-900/60">
                     <CardHeader className="text-center px-0">
                         <h3 className="text-2xl font-bold">Super</h3>
                     </CardHeader>

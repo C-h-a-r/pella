@@ -23,6 +23,16 @@ export function Home() {
   }, []);
 
   const opacity = Math.max(0, 1 - (scrollY / 100));
+  
+  // Calculate positions with immediate updates
+  const xPosition = Math.sin(scrollY * 0.002) * window.innerWidth * 0.4;
+  const yPosition = Math.min(scrollY * 0.3, window.innerHeight * 0.8);
+  
+  const glowPosition = {
+    top: yPosition + 'px',
+    transform: `translateX(${xPosition}px)`,
+    transition: 'none'
+  };
 
   return (
     <motion.div 
@@ -31,7 +41,10 @@ export function Home() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="fixed top-[-100px] right-[-100px] w-[500px] h-[500px] rounded-full bg-primary blur-[200px] opacity-50 pointer-events-none z-[-1]"/>
+      <div 
+        className="fixed w-[500px] h-[500px] rounded-full bg-primary blur-[200px] opacity-50 pointer-events-none z-[-1]"
+        style={glowPosition}
+      />
       <div 
         className="fixed top-[60vh] left-0 right-0 h-[40vh] bg-gradient-to-t from-background to-transparent pointer-events-none z-[20] transition-opacity duration-200"
         style={{ opacity }}

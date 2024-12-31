@@ -6,6 +6,7 @@ export function Discord() {
     const [code, setCode] = useState(`import discord
 from discord.ext import commands
 
+token = 'randomString'
 bot = commands.Bot(command_prefix='!')
 
 @bot.event
@@ -14,7 +15,9 @@ async def on_ready():
 
 @bot.command(name='hello')
 async def hello(ctx):
-    await ctx.send('Hello! I am a Discord bot hosted on Pella!')`);
+    await ctx.send('Hello! I am a Discord bot hosted on Pella!')
+
+bot.run("YOUR TOKEN")`);
 
     return (
         <div className="w-full max-w-7xl mx-auto px-4 py-16 mt-[200px]">
