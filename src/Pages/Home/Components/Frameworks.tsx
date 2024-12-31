@@ -1,6 +1,4 @@
 import { SiExpress, SiFastapi, SiFlask, SiDjango } from "@icons-pack/react-simple-icons";
-import { cn } from "@/lib/utils";
-import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
 
 export function Frameworks() {
     return (

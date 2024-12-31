@@ -9,7 +9,7 @@ import { CTA } from "./Components/CTA";
 
 export function Home() {
   const [scrollY, setScrollY] = useState(0);
-  const [isTop, setIsTop] = useState(true);
+  const [_isTop, setIsTop] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
